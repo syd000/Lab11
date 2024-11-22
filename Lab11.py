@@ -1,4 +1,5 @@
 # Lab 11
+import math
 import os
 import matplotlib.pyplot as plt
 
@@ -134,7 +135,7 @@ def main():
             for grade in grades:
                 total += grade
             avg_grade = total / len(grades)
-            print(f"Avg: {avg_grade:.0f}%")
+            print(f"Avg: {math.floor(avg_grade)}%")
 
             # Find Max
             max_grade = grades[0]
